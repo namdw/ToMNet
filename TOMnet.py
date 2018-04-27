@@ -76,7 +76,7 @@ class TOMNet(nn.Module):
 		x = self.conv1(x)
 		x = F.relu(self.conv2(x))
 		x = self.avgpool(x)
-		print(x.size())
+		# print(x.size())
 		x = x.view(-1, self.out_channel*3*3)
 		x = F.softmax(self.linear(x), dim=1)
 

@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import time
 from Agents import RandomAgent
 
-print('hi')
-
 class GridWorld():
 	def __init__(self, height, width, num_goal):
 		self.height = height
@@ -62,7 +60,7 @@ class GridWorld():
 
 	def step(self):
 		new_y, new_x = self.agent.move()
-		print(new_y, new_x)
+		# print(new_y, new_x)
 
 	def getState(self):
 		agent_mat = np.zeros([1, self.height, self.width])
